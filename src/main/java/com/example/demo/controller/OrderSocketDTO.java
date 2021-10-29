@@ -6,7 +6,7 @@ import java.util.Date;
 public class OrderSocketDTO {
     private String name;
     private Integer countOrder;
-    private Date lastUpdate;
+    private String lastUpdate;
 	public String getName() {
 		return name;
 	}
@@ -19,12 +19,13 @@ public class OrderSocketDTO {
 	public void setCountOrder(Integer countOrder) {
 		this.countOrder = countOrder;
 	}
-	public Date getLastUpdate() {
+	public String getLastUpdate() {
 		return lastUpdate;
 	}
-	public void setLastUpdate(Date lastUpdate) {
+	public void setLastUpdate(String lastUpdate) {
 		this.lastUpdate = lastUpdate;
 	}
+
 
     
 }
