@@ -28,7 +28,7 @@ public class BotMessage {
 
 	private static int i = 0;
 
-	@Scheduled(fixedDelay = 5000)
+//	@Scheduled(fixedDelay = 5000)
 	public void bot() throws InterruptedException, ExecutionException, TimeoutException {
 		System.out.println("bot");
 
