@@ -14,7 +14,7 @@ function setConnected(connected) {
 
 function connect() {
 	var jwt = "";
-    var socket = new SockJS('https://api-dev.agro-chain.club/strategy/api-strategy-socket?access_token='+jwt);
+    var socket = new SockJS('https://api-dev.agro-chain.club/trade/api-trade-socket?access_token='+jwt);
     stompClient = Stomp.over(socket);
     stompClient.connect({}, function (frame) {
         setConnected(true);
